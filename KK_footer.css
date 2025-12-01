@@ -1,0 +1,132 @@
+body 
+{
+    margin: 0;
+    background: #111;
+    font-family: Arial, sans-serif;
+}
+
+/* FOOTER MINA BOX */
+.footer 
+{
+    width: 90%;
+    margin: 40px auto;
+    background: #181a33;
+    color: #fff;
+    padding: 40px;
+    border-radius: 25px;
+}
+
+/* TOP SECTIION 2 COLUMNS */
+.footer-top 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+/* Contact Box */
+.contact-box h2,
+.social-box h2 
+{
+    margin: 0 0 20px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.contact-details p 
+{
+    margin: 8px 0;
+    font-size: 16px;
+    opacity: 0.85;
+}
+
+/* Social Icons */
+.social-icons 
+{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.social-icons i 
+{
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons i:hover 
+{
+    opacity: 0.7;
+}
+
+/* FOOTER LINK ROW */
+.footer-links 
+{
+    margin: 20px auto 10px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-links a 
+{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    opacity: 0.9;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.footer-links a:hover 
+{
+    opacity: 0.6;
+}
+
+/* Dividers */
+.divider 
+{
+    width: 1px;
+    height: 20px;
+    background: rgba(106, 106, 112, 0.368);
+}
+
+/* COPYRIGHT */
+.footer p.copyright 
+{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+    .footer-top {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer {
+        padding: 30px 20px;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+
+    .social-icons i {
+        font-size: 30px;
+    }
+}

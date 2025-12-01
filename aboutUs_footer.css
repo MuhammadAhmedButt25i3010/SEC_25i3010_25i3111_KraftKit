@@ -1,0 +1,96 @@
+/*        KraftKit_footer.css        */
+
+:root
+{
+  --panel: #181a33;
+  --muted: rgba(255,255,255,0.8);
+}
+
+
+
+/* footer outer */
+.kk-footer 
+{
+  width: 92%;
+  margin: 28px auto 60px;
+  background: var(--panel);
+  border-radius: 18px;
+  padding: 34px 26px;
+  color: white;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+
+
+
+/* inner layout */
+.kk-footer-inner { max-width: 1200px; margin: 0 auto; }
+
+
+
+/* top row */
+.footer-top 
+{
+  display:flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items:flex-start;
+  margin-bottom: 28px;
+}
+
+
+
+/* contact box left */
+.contact-box h3 { margin:0; font-size:20px; font-weight:700; color:#fff; }
+.contact-box .muted { margin:6px 0 10px; font-weight:700; opacity:0.9; }
+.contact-info p { margin:6px 0; color: rgba(255,255,255,0.95); }
+
+
+
+/* social box right */
+.social-box { text-align:right; }
+.social-box h3 { margin:0 0 12px; font-size:20px; font-weight:700; }
+.social-icons { display:flex; gap:18px; justify-content:flex-end; align-items:center; }
+
+
+
+.social-icons a 
+{
+  display:inline-grid; place-items:center;
+  width:44px;height:44px;border-radius:50%;
+  background: rgba(255,255,255,0.05); text-decoration:none; color:#fff;
+  transition: transform .12s ease;
+}
+.social-icons a i { font-size:26px; }
+.social-icons a:hover { transform: translateY(-3px); }
+
+
+
+/* links row */
+.footer-links 
+{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:28px;
+  margin: 8px auto 8px;
+  flex-wrap:wrap;
+}
+
+
+.footer-links a 
+{
+  color: white; text-decoration:none; font-weight:700; font-size:18px;
+  padding: 8px 6px;
+}
+
+
+.footer-links .divider 
+{
+  width:1px; height:24px; background: rgba(255,255,255,0.25);
+  display:inline-block;
+}
+
+/* copyright */
+.footer-copy { text-align:center; margin-top:14px; color: rgba(255,255,255,0.55); font-size:15px; }
+

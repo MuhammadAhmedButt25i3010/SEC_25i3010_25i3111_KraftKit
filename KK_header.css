@@ -1,0 +1,107 @@
+body 
+{
+
+    margin: 0;
+    background: #1a1a1a;
+    font-family: Arial, sans-serif;
+
+}
+
+.header 
+{
+
+    width: 90%;
+    margin: 30px auto;
+    background: #181a33;
+    padding: 20px 40px;
+
+    border-radius: 30px;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-box 
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img 
+{
+    width: 55px;
+}
+
+.logo-text 
+{
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+/* CSS for making main_desktop Navigating*/
+.nav 
+{
+    display: flex;
+    gap: 60px;
+}
+
+.nav a 
+{
+
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* CSS for desktop icons */
+.icons-right 
+{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.top-icons,
+.bottom-icons 
+{
+    display: flex;
+    gap: 20px;
+}
+
+.top-icons i,
+.bottom-icons i 
+{
+
+    font-size: 26px;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+
+.top-icons i 
+{
+    background: rgba(255,255,255,0.12);
+}
+
+.bottom-icons i 
+{
+    background: none;
+}
+
+/* mobile_menu Icon (hide) */
+.mobile-menu-btn 
+{
+    display: none;
+}
+
+.mobile-menu-btn i 
+{
+    font-size: 30px;
+    color: white;
+}

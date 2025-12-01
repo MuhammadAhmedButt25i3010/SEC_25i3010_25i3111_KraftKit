@@ -1,0 +1,96 @@
+/*          page.css        */
+
+:root
+{
+  --page-bg: #0d0d25;
+  --panel-bg: #181a33;
+  --muted: rgba(255,255,255,0.75);
+}
+
+
+
+/* overall page body consistency */
+body 
+{
+  background: var(--page-bg);
+  color: #ffffff;
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+}
+
+
+
+/* main wrapper to align with header/footer width */
+.page-wrap 
+{
+  width: 92%;
+  margin: 18px auto;
+  padding-bottom: 28px;
+}
+
+
+
+/* About Section */
+.about-section { background: transparent; padding: 8px 6px; }
+
+
+
+/* Title */
+.about-section h1 
+{
+  font-size: 34px;
+  margin: 18px 0 26px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+
+
+/* grid with left text and right stacked images */
+.about-grid 
+{
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 36px;
+  align-items: start;
+}
+
+
+
+
+/* article text styling to mimic screenshot spacing + width */
+.about-text p 
+{
+  font-size: 18px;
+  line-height: 1.9;
+  color: rgba(255,255,255,0.95);
+  margin-bottom: 22px;
+  max-width: 100%;
+}
+
+
+
+
+/* right column images */
+.about-images 
+{
+  display:flex;
+  flex-direction:column;
+  gap: 22px;
+  align-items: center;
+}
+
+
+
+/* main featured image */
+.about-img { width: 220px; border-radius: 4px; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
+
+
+
+/* smaller images for stacked */
+.about-img.small { width: 220px; }
+
+
+
+/* spacing bottom between content and footer */
+.page-wrap { padding-bottom: 40px; }
+

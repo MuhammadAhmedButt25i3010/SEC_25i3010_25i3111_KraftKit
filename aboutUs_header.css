@@ -1,0 +1,154 @@
+/*             KraftKit_header.css            */
+
+:root
+{
+  --bg-dark: #171626;
+  --panel: #181a33;
+  --accent-blue: #0ea5ff;
+  --white-90: rgba(255,255,255,0.95);
+  --muted: rgba(255,255,255,0.75);
+}
+
+
+
+
+
+/* reset basics */
+* { box-sizing: border-box; }
+body { margin: 0; background: #0d0d25; font-family: "Poppins", "Segoe UI", Arial, sans-serif; color: white; }
+
+
+
+
+/* header container */
+.kk-header 
+{
+  width: 92%;
+  margin: 28px auto 18px;
+  border-radius: 16px;
+  padding: 16px;
+  /* blue outline like screenshot */
+  box-shadow: 0 0 0 3px rgba(16,163,251,0.18) inset, 0 4px 0 rgba(0,0,0,0.2);
+  background: linear-gradient(180deg, rgba(24,26,51,0.98), rgba(24,26,51,0.98));
+}
+
+
+
+/* inner row */
+.kk-header-inner 
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+
+
+
+/* left: logo */
+.kk-left { display:flex; align-items:center; gap:14px; }
+.kk-logo { width:42px; height:auto; display:block; }
+
+
+
+.kk-brand 
+{
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--white-90);
+  letter-spacing: .5px;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+
+/* nav center */
+.kk-nav 
+{
+  display:flex;
+  gap: 36px;
+  align-items:center;
+}
+
+
+
+
+.kk-nav a 
+{
+  color: var(--white-90);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* actions icons on right */
+.kk-actions { display:flex; gap:12px; align-items:center; }
+
+
+
+/* generic icon button */
+.icon 
+{
+  border: none;
+  background: transparent;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+
+
+
+
+/* special shape buttons to match screenshot */
+.icon.circle 
+{
+  width:44px; height:44px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+
+
+
+.icon.square 
+{
+  width:44px; height:44px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 8px;
+}
+
+
+
+
+
+
+/* small distinct icon styles */
+.icon.heart { font-size:20px; background: transparent; color: white; }
+.icon.user 
+{
+  background: linear-gradient(180deg,#0b0b0b,#000);
+  width:44px;height:44px;border-radius:22px;
+  display:inline-grid; place-items:center;
+}
+
+
+
+.icon.cart 
+{
+  background: rgba(0,0,0,0.45);
+  border-radius:6px; width:44px;height:44px; display:inline-grid; place-items:center;
+}
+
+
+
+
+/* icon svg sizing */
+.icon i { font-size: 18px; color: #fff; }
+
+/* small hover effect */
+.icon:hover { transform: translateY(-2px); transition: all .15s ease; }
+
